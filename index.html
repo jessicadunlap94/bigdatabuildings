@@ -106,7 +106,7 @@ map.on('load', function() {
         // change info window on hover
         map.on('mousemove', function(e) {
           var states = map.queryRenderedFeatures(e.point, {
-            layers: ['buildings-lu-new'] // get from the mapbox top left layer information
+            layers: ['buildings-lu'] // get from the mapbox top left layer information
           });
           
           if (states.length > 0) {
